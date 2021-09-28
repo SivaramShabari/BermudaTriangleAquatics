@@ -3,6 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBPImRxBI2OiZqUzeRiPYNNPjWVW1KCm3M",
+  authDomain: "bermuda-triangle-aquatics.firebaseapp.com",
+  projectId: "bermuda-triangle-aquatics",
+  storageBucket: "bermuda-triangle-aquatics.appspot.com",
+  messagingSenderId: "119735933143",
+  appId: "1:119735933143:web:7a5d9238299199706ff892",
+  measurementId: "G-C5K4JVXW58"
+};
+
+const app = initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>
